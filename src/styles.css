@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin: 20px 0;
+  font-size: 2.5rem;
+}
+
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button.primary {
+  background-color: #4caf50;
+  color: white;
+}
+
+button.primary:hover {
+  background-color: #45a049;
+}
+
+button.secondary {
+  background-color: #e74c3c;
+  color: white;
+}
+
+button.secondary:hover {
+  background-color: #c0392b;
+}
+
+/* Input Field */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+/* Task List */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+  background-color: #eef2f3;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Task Actions */
+.task-actions button {
+  margin-left: 10px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.filter-buttons button {
+  padding: 8px 15px;
+  font-size: 1rem;
+  background: #ddd;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.filter-buttons button:hover {
+  transform: scale(1.05);
+  background-color: #ccc;
+}
+
+.filter-buttons button.active {
+  background-color: #4caf50;
+  color: white;
+}
